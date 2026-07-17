@@ -15,7 +15,7 @@ This repo works through four tasks:
 
 ```
 .
-├── HW3.ipynb          # Main notebook: all four parts, end to end
+├── Main_code.ipynb          # Main notebook: all four parts, end to end
 └── images/              # Sample outputs used in this README
 ```
 
@@ -33,11 +33,11 @@ Simulated brightfield images of spherical particles are used to train a VAE with
 
 **Simulated noisy/clean training pairs:**
 
-![Noisy and clean particle pairs](images/q1_noisy_clean_pairs.png)
+![Noisy and clean particle pairs](images/output.png)
 
 **Sampling the 2D latent space on a grid:**
 
-![Latent space grid](images/q1_latent_space_grid.png)
+![Latent space grid](images/output1.png)
 
 
 
@@ -48,11 +48,8 @@ The same architecture is retrained on grayscale pet images at latent dimensions 
 
 **Reconstruction quality across latent dimensions:**
 
-![Reconstruction comparison across latent sizes](images/q2_reconstruction_comparison.png)
+![Reconstruction comparison across latent sizes](images/output2.png)
 
-**Cats vs. dogs in the 2D latent space:**
-
-![Cat/dog latent space separation](images/q2_latent_space_catdog.png)
 
 ## 3 — Wasserstein autoencoder
 
@@ -60,17 +57,19 @@ A WAE is trained on the same data and compared against the VAE.
 
 **WAE vs. VAE reconstructions:**
 
-![WAE vs VAE reconstruction](images/q3_wae_vs_vae_reconstruction.png)
+![WAE vs VAE reconstruction](images/output3.png)
 
 **Interpolating between a cat and a dog in latent space:**
 
-![Cat-to-dog interpolation](images/q3_cat_dog_interpolation.png)
+![Cat-to-dog interpolation](images/output4.png)
 
 ## 4 — U-Net segmentation
 
 A U-Net is trained to segment pet images into trimap classes, then compared against a variant with the skip connections removed.
 
+**Predicted segmentation, with vs. without skip connections:**
 
+![Segmentation](images/output5.png)
 
 ## Notes
 
