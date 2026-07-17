@@ -15,7 +15,7 @@ This repo works through four tasks:
 
 ```
 .
-├── Main_code.ipynb          # Main notebook: all four parts, end to end
+├── Main_Code.ipynb          # Main notebook: all four parts, end to end
 └── images/              # Sample outputs used in this README
 ```
 
@@ -41,7 +41,7 @@ Simulated brightfield images of spherical particles are used to train a VAE with
 
 
 
-## 2 — VAE on the Oxford-IIIT Pet dataset
+## 2 VAE on the Oxford-IIIT Pet dataset
 
 The same architecture is retrained on grayscale pet images at latent dimensions 2, 10, and 50.
 
@@ -51,7 +51,7 @@ The same architecture is retrained on grayscale pet images at latent dimensions 
 ![Reconstruction comparison across latent sizes](images/output2.png)
 
 
-## 3 — Wasserstein autoencoder
+## 3 Wasserstein autoencoder
 
 A WAE is trained on the same data and compared against the VAE.
 
@@ -63,7 +63,7 @@ A WAE is trained on the same data and compared against the VAE.
 
 ![Cat-to-dog interpolation](images/output4.png)
 
-## 4 — U-Net segmentation
+## 4 U-Net segmentation
 
 A U-Net is trained to segment pet images into trimap classes, then compared against a variant with the skip connections removed.
 
