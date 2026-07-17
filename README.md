@@ -16,7 +16,6 @@ This repo works through four tasks:
 ```
 .
 ├── HW3.ipynb          # Main notebook: all four parts, end to end
-├── HW3_2026.pdf        # Task write-up
 └── images/              # Sample outputs used in this README
 ```
 
